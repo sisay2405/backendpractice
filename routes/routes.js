@@ -1,3 +1,4 @@
+const Model = require('../models/model');
 const express = require('express');
 
 const router = express.Router()
@@ -11,7 +12,6 @@ router.post('/post', (req, res) => {
 router.get('/getAll', (req, res) => {
     res.send('Get All API')
 })
-
 //Get by ID Method
 router.get('/getOne/:id', (req, res) => {
     res.send(req.params.id)
